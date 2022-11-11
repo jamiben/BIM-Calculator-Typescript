@@ -1,0 +1,111 @@
+
+html, body{
+    height: 100vh;
+    margin: 0;
+}
+
+html{
+    background-image: url("/dist/asset/942DEBD2-ACDD-4ECC-BC6A-5A1455624F42.jpeg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 5px yellow;
+    font-size: 18px;
+}
+body{
+    border: solid 5px yellow;
+    text-align: center;
+}
+.content{
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    border: solid violet;
+}
+
+.form{
+    background-color: rgb(255, 240, 240);
+    opacity: .9;
+    width: 100%;
+    margin-top: 10%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  19px 19px 50px #303030,
+                -19px -19px 50px #ffffff;
+    border: solid red;
+
+}
+.contentInpS{
+    width: 100%;
+}
+.contentInp1{
+    margin-bottom: 10%;
+}
+.contentInp1, .contentInp2{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+input {
+    padding: 3%;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 100px;
+    box-shadow:  6px 6px 12px #251c1c,
+                -6px -6px 12px #ffffff;
+}
+input [type="number"]{
+    font-size: 18px;
+}
+button{
+    padding: 3%;
+    width: 100%;
+    margin: 10%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* *****$$$$$$$$$$$$$$$$RESPNSIVE TAB */
+@media only screen and (min-width: 768px) and (max-width: 991px) {   
+    html{
+        overflow: hidden;
+    }
+    body{
+        overflow: hidden;
+
+    }
+
+    .content{
+        margin: 0;
+        align-items: center;
+        position: relative;
+        padding-top: 0;
+    }
+}
+/* $$$$$$$$$$$$$$$$$$$$$RESPONSIVE DESKTOP */
+@media only screen and (min-width:992px){
+    html{
+        background-size: cover;
+        overflow: hidden;
+        font-size: 38px;
+    }
+    body{
+        padding: 0;
+    }
+    .content{
+        align-items: center;
+        padding: 0% 25%;
+    }
+    .form{
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    input[type="number"]{
+        font-size: 38px;
+        width: 30%;
+    }
+}
